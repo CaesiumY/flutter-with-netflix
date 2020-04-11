@@ -1,2 +1,1 @@
-# flutter-with-netflix
-플러터로 넷플릭스 클론
+# 플러터로 넷플릭스 UI 클론 코딩하기
