@@ -12,11 +12,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return TobBar();
+    return TopBar();
   }
 }
 
-class TobBar extends StatelessWidget {
+class TopBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
