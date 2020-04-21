@@ -8,11 +8,14 @@ class BoxSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(7),
+      padding: EdgeInsets.all(10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text('지금 뜨는 콘텐츠'),
+          Text(
+            '지금 뜨는 콘텐츠',
+            style: TextStyle(fontSize: 18),
+          ),
           Container(
             height: 150,
             child: ListView(

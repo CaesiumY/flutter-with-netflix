@@ -77,21 +77,21 @@ class TopBar extends StatelessWidget {
             padding: EdgeInsets.only(right: 1),
             child: Text(
               'TV 프로그램',
-              style: TextStyle(fontSize: 14),
+              style: TextStyle(fontSize: 17),
             ),
           ),
           Container(
             padding: EdgeInsets.only(right: 1),
             child: Text(
               '영화',
-              style: TextStyle(fontSize: 14),
+              style: TextStyle(fontSize: 17),
             ),
           ),
           Container(
             padding: EdgeInsets.only(right: 1),
             child: Text(
               '내가 찜한 콘텐츠',
-              style: TextStyle(fontSize: 14),
+              style: TextStyle(fontSize: 17),
             ),
           ),
         ],

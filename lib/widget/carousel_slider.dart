@@ -55,7 +55,7 @@ class _CarouselImageState extends State<CarouselImage> {
             padding: EdgeInsets.fromLTRB(0, 10, 0, 3),
             child: Text(
               _currentKeyword,
-              style: TextStyle(fontSize: 13),
+              style: TextStyle(fontSize: 15),
             ),
           ),
           Container(
@@ -111,7 +111,7 @@ class _CarouselImageState extends State<CarouselImage> {
                       IconButton(icon: Icon(Icons.info), onPressed: () {}),
                       Text(
                         '정보',
-                        style: TextStyle(fontSize: 11),
+                        style: TextStyle(fontSize: 15),
                       )
                     ],
                   ),

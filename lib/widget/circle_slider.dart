@@ -8,11 +8,14 @@ class CircleSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(7),
+      padding: EdgeInsets.all(10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text('미리보기'),
+          Text(
+            '미리보기',
+            style: TextStyle(fontSize: 17),
+          ),
           Container(
             height: 120,
             child: Container(
