@@ -33,8 +33,144 @@ class _DetailScreenState extends State<DetailScreen> {
                         fit: BoxFit.cover,
                       ),
                     ),
-                  )
+                    child: ClipRect(
+                      child: BackdropFilter(
+                        filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                        child: Container(
+                          alignment: Alignment.center,
+                          color: Colors.black.withOpacity(0.2),
+                          child: Container(
+                            child: Column(
+                              children: <Widget>[
+                                Container(
+                                  padding: EdgeInsets.fromLTRB(0, 30, 0, 10),
+                                  child: Image.asset(
+                                      'images/' + widget.movie.poster),
+                                  height: 300,
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(7),
+                                  child: Text(
+                                    '99% 일치 2019 15+ 시즌 1개',
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(fontSize: 13),
+                                  ),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(5),
+                                  child: Text(
+                                    widget.movie.title,
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w600),
+                                  ),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.fromLTRB(10, 3, 10, 3),
+                                  child: FlatButton(
+                                      onPressed: () {},
+                                      color: Colors.red,
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: <Widget>[
+                                          Icon(Icons.play_arrow),
+                                          Text('재생'),
+                                        ],
+                                      )),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(3),
+                                  child: Text(widget.movie.keyword),
+                                ),
+                                Container(
+                                  alignment: Alignment.centerLeft,
+                                  padding: EdgeInsets.all(5),
+                                  child: Text(
+                                    '출연: 현빈, 손예진, 서지혜\n제작자: 이정호, 박지은',
+                                    style: TextStyle(
+                                        color: Colors.white70, fontSize: 12),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                      child: AppBar(
+                    elevation: 0,
+                    backgroundColor: Colors.transparent,
+                  ))
                 ],
+              ),
+              Container(
+                // color: Colors.black26,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Container(
+                      padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                      child: InkWell(
+                        onTap: () {},
+                        child: Column(
+                          children: <Widget>[
+                            like ? Icon(Icons.check) : Icon(Icons.add),
+                            Padding(padding: EdgeInsets.all(5)),
+                            Text(
+                              '내가 찜한 컨텐츠',
+                              style: TextStyle(
+                                  fontSize: 11, color: Colors.white60),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                      child: InkWell(
+                        onTap: () {},
+                        child: Container(
+                          width: 70,
+                          child: Column(
+                            children: <Widget>[
+                              Icon(Icons.thumb_up),
+                              Padding(padding: EdgeInsets.all(5)),
+                              Text(
+                                '평가',
+                                style: TextStyle(
+                                    fontSize: 11, color: Colors.white60),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                      child: InkWell(
+                        onTap: () {},
+                        child: Container(
+                          width: 70,
+                          child: Column(
+                            children: <Widget>[
+                              Icon(Icons.send),
+                              Padding(padding: EdgeInsets.all(5)),
+                              Text(
+                                '공유',
+                                style: TextStyle(
+                                    fontSize: 11, color: Colors.white60),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
