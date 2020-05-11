@@ -57,9 +57,9 @@ class TopBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.fromLTRB(20, 7, 20, 70),
+      padding: EdgeInsets.fromLTRB(15, 7, 20, 70),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           Image.asset(
             'images/bbongflix_logo.png',
@@ -70,21 +70,21 @@ class TopBar extends StatelessWidget {
             padding: EdgeInsets.only(right: 1),
             child: Text(
               'TV 프로그램',
-              style: TextStyle(fontSize: 17),
+              style: TextStyle(fontSize: 14),
             ),
           ),
           Container(
             padding: EdgeInsets.only(right: 1),
             child: Text(
               '영화',
-              style: TextStyle(fontSize: 17),
+              style: TextStyle(fontSize: 14),
             ),
           ),
           Container(
             padding: EdgeInsets.only(right: 1),
             child: Text(
               '내가 찜한 콘텐츠',
-              style: TextStyle(fontSize: 17),
+              style: TextStyle(fontSize: 14),
             ),
           ),
         ],
