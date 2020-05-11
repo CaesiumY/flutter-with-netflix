@@ -87,7 +87,7 @@ class _CarouselImageState extends State<CarouselImage> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(right: 10),
+                  padding: EdgeInsets.only(right: 20),
                   child: FlatButton(
                       color: Colors.white,
                       onPressed: () {},
@@ -97,7 +97,7 @@ class _CarouselImageState extends State<CarouselImage> {
                             Icons.play_arrow,
                             color: Colors.black,
                           ),
-                          Padding(padding: EdgeInsets.all(3)),
+                          Padding(padding: EdgeInsets.all(5)),
                           Text(
                             '재생',
                             style: TextStyle(color: Colors.black),

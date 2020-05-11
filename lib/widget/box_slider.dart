@@ -24,7 +24,8 @@ class BoxSlider extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               children: makeBoxImages(context, movies),
             ),
-          )
+          ),
+          Padding(padding: EdgeInsets.only(bottom: 10)),
         ],
       ),
     );
@@ -46,7 +47,7 @@ List<Widget> makeBoxImages(BuildContext context, List<Movie> movies) {
             }));
       },
       child: Container(
-        padding: EdgeInsets.only(right: 10),
+        padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
         child: Align(
           alignment: Alignment.centerLeft,
           child: Image.network(movies[i].poster),
