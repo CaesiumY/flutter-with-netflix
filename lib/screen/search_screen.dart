@@ -31,10 +31,10 @@ class _SearchScreenState extends State<SearchScreen> {
   }
 
   Widget _buildList(BuildContext context, List<DocumentSnapshot> snapshot) {
-    List<DocumentSnapshot> searchResult = [];
+    List<DocumentSnapshot> searchResults = [];
     for (DocumentSnapshot d in snapshot) {
       if (d.data.toString().contains(_searchText)) {
-        searchResult.add(d);
+        searchResults.add(d);
       }
     }
 
@@ -44,7 +44,7 @@ class _SearchScreenState extends State<SearchScreen> {
       childAspectRatio: 1 / 1.5,
       padding: EdgeInsets.all(3),
       children:
-          searchResult.map((data) => _buildListItem(context, data)).toList(),
+          searchResults.map((data) => _buildListItem(context, data)).toList(),
     ));
   }
 

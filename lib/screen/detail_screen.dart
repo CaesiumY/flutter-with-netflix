@@ -14,6 +14,7 @@ class _DetailScreenState extends State<DetailScreen> {
   @override
   void initState() {
     super.initState();
+    like = widget.movie.like;
   }
 
   @override
