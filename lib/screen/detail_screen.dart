@@ -115,8 +115,10 @@ class _DetailScreenState extends State<DetailScreen> {
                       padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
                       child: InkWell(
                         onTap: () {
-                          like = !like;
-                          widget.movie.reference.updateData({'like': like});
+                          setState(() {
+                            like = !like;
+                            widget.movie.reference.updateData({'like': like});
+                          });
                         },
                         child: Column(
                           children: <Widget>[
