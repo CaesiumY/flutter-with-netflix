@@ -14,6 +14,7 @@ class _DetailScreenState extends State<DetailScreen> {
   @override
   void initState() {
     super.initState();
+    like = widget.movie.like;
   }
 
   @override
@@ -114,7 +115,12 @@ class _DetailScreenState extends State<DetailScreen> {
                     Container(
                       padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          setState(() {
+                            like = !like;
+                            widget.movie.reference.updateData({'like': like});
+                          });
+                        },
                         child: Column(
                           children: <Widget>[
                             like ? Icon(Icons.check) : Icon(Icons.add),
