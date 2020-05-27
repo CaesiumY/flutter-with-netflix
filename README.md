@@ -8,16 +8,21 @@
 
 <details>
     <summary>메인 페이지</summary>
+    <img src='./screenshots/home.jpg' width='400px'></img>
 </details>
 <details>
     <summary>디테일 페이지</summary>
+    <img src='./screenshots/detail.jpg' width='400px'></img>
 </details>
 <details>
     <summary>검색 페이지</summary>
+    <img src='./screenshots/search.jpg' width='400px'></img>
 </details>
 <details>
     <summary>찜목록 페이지</summary>
+    <img src='./screenshots/liked.jpg' width='400px'></img>
 </details>
 <details>
     <summary>더보기 페이지</summary>
+    <img src='./screenshots/more.jpg' width='400px'></img>
 </details>
